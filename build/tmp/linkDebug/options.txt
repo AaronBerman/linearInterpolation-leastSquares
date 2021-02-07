@@ -1,0 +1,8 @@
+/DEBUG
+/OUT:D:\cs417\CS417SemesterProject\build\exe\main\debug\CPUTemps.exe
+/NOLOGO
+"/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\lib\x64"
+"/LIBPATH:C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x64"
+"/LIBPATH:C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x64"
+D:\cs417\CS417SemesterProject\build\obj\main\debug\5dclpftixlt2fie9myqzkdntm\myMatrix.obj
+D:\cs417\CS417SemesterProject\build\obj\main\debug\bjrvo6da98oajz8w82pcnptk\app.obj

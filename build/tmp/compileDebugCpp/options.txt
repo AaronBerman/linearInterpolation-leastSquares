@@ -1,0 +1,9 @@
+/TP
+/nologo
+/c
+/Zi
+/ID:\cs417\CS417SemesterProject\src\main\headers
+"/IC:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt"

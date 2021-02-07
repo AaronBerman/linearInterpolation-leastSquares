@@ -1,0 +1,4 @@
+See file:///D:/cs417/CS417SemesterProject/build/tmp/linkDebug/output.txt for all output for linkDebug.
+linking CPUTemps.exe successful.
+
+Finished linkDebug, see full log file:///D:/cs417/CS417SemesterProject/build/tmp/linkDebug/output.txt.

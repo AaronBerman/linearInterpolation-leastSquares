@@ -1,0 +1,16 @@
+See file:///D:/cs417/CS417SemesterProject/build/tmp/compileDebugCpp/output.txt for all output for compileDebugCpp.
+compiling myMatrix.cpp successful.
+myMatrix.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\ostream(415): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\ostream(408): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+D:\cs417\CS417SemesterProject\src\main\cpp\myMatrix.cpp(16): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)' being compiled
+D:\cs417\CS417SemesterProject\src\main\cpp\myMatrix.cpp(16): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+
+compiling app.cpp successful.
+app.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\ostream(415): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\ostream(408): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+D:\cs417\CS417SemesterProject\src\main\cpp\app.cpp(188): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)' being compiled
+D:\cs417\CS417SemesterProject\src\main\cpp\app.cpp(19): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+
+Finished compileDebugCpp, see full log file:///D:/cs417/CS417SemesterProject/build/tmp/compileDebugCpp/output.txt.
