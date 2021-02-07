@@ -1,0 +1,33 @@
+\hypertarget{app_8cpp}{}\doxysection{src/main/cpp/app.cpp File Reference}
+\label{app_8cpp}\index{src/main/cpp/app.cpp@{src/main/cpp/app.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include \char`\"{}app.\+h\char`\"{}}\newline
+Include dependency graph for app.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{app_8cpp_a9d44cd2cb0b87ef893564b56a2b2614a}{print\+My\+Matrix}} (const vector$<$ std\+::vector$<$ double $>$$>$ \&M)
+\item 
+int \mbox{\hyperlink{app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{app.cpp@{app.cpp}!main@{main}}
+\index{main@{main}!app.cpp@{app.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{app_8cpp_a9d44cd2cb0b87ef893564b56a2b2614a}\label{app_8cpp_a9d44cd2cb0b87ef893564b56a2b2614a}} 
+\index{app.cpp@{app.cpp}!printMyMatrix@{printMyMatrix}}
+\index{printMyMatrix@{printMyMatrix}!app.cpp@{app.cpp}}
+\doxysubsubsection{\texorpdfstring{printMyMatrix()}{printMyMatrix()}}
+{\footnotesize\ttfamily void print\+My\+Matrix (\begin{DoxyParamCaption}\item[{const vector$<$ std\+::vector$<$ double $>$$>$ \&}]{M }\end{DoxyParamCaption})}
+

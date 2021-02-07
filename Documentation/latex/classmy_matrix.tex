@@ -1,0 +1,389 @@
+\hypertarget{classmy_matrix}{}\doxysection{my\+Matrix Class Reference}
+\label{classmy_matrix}\index{myMatrix@{myMatrix}}
+
+
+{\ttfamily \#include $<$my\+Matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmy_matrix_a96fdf649a8b75a7e0d5279768981a54d}{my\+Matrix}} ()
+\item 
+\mbox{\hyperlink{classmy_matrix_ad6bc8b87e024bbe486e2a94d0638618a}{my\+Matrix}} (int x, int y)
+\item 
+virtual \mbox{\hyperlink{classmy_matrix_a57f33bc4fd38dbab2dd2120438d9dabc}{$\sim$my\+Matrix}} ()
+\item 
+int \mbox{\hyperlink{classmy_matrix_af3cc21c9dc7b299b965d0cbfb634c627}{get\+Rows}} () const
+\item 
+int \mbox{\hyperlink{classmy_matrix_a2763b95aa7f310d3d2f7ecdb62a0455e}{get\+Cols}} () const
+\item 
+double \mbox{\hyperlink{classmy_matrix_a180beafbaed7dd6994b9e8723fd30ae4}{get\+C0}} () const
+\item 
+double \mbox{\hyperlink{classmy_matrix_a1c6c0840eeff24ad522482dd651ece04}{get\+C1}} () const
+\item 
+double \mbox{\hyperlink{classmy_matrix_a8a54b2fdf241e03d85512dfb1640295e}{get\+Xk}} (int n, int m) const
+\item 
+double \mbox{\hyperlink{classmy_matrix_af1c68da1d0e194ef71408d89dc4b1385}{get\+Yi}} ()
+\item 
+void \mbox{\hyperlink{classmy_matrix_a24df950f2d3a95eae4ab9a2d3e471d4a}{set\+Rows}} (int x)
+\item 
+void \mbox{\hyperlink{classmy_matrix_a242fae1501bc51c00ee483555d2ee68c}{set\+Cols}} (int y)
+\item 
+void \mbox{\hyperlink{classmy_matrix_affcce7d388d24bb4020b38a5e38ad339}{add\+Content}} (int i, std\+::list$<$ double $>$ data)
+\item 
+void \mbox{\hyperlink{classmy_matrix_aa3649ce7d531e6683733b4c1c0c4cf00}{transform}} (\mbox{\hyperlink{classmy_matrix}{my\+Matrix}} M)
+\item 
+void \mbox{\hyperlink{classmy_matrix_ab6be1d3036e4b08f94c2e96b2be2ec9f}{multiply}} (\mbox{\hyperlink{classmy_matrix}{my\+Matrix}} M, \mbox{\hyperlink{classmy_matrix}{my\+Matrix}} N)
+\item 
+void \mbox{\hyperlink{classmy_matrix_abbcc56060c7e2721dac0e2d7ef9e083d}{create\+Augmented}} (\mbox{\hyperlink{classmy_matrix}{my\+Matrix}} M, \mbox{\hyperlink{classmy_matrix}{my\+Matrix}} N)
+\item 
+void \mbox{\hyperlink{classmy_matrix_a1f55cee5d371210fc5981d7bfa8dcedb}{sort\+Row}} ()
+\item 
+void \mbox{\hyperlink{classmy_matrix_ac25fdce4ac1f04bcaa037055ae215971}{scale}} (int x)
+\item 
+void \mbox{\hyperlink{classmy_matrix_ab8c3f15494e022e17dd5040dae3285a2}{reduce}} ()
+\item 
+void \mbox{\hyperlink{classmy_matrix_a03f96ac31338d054defd725a51f130c7}{back\+Solve}} ()
+\item 
+void \mbox{\hyperlink{classmy_matrix_a0e0488e9af50c513bc79f930a9d37f95}{Display}} (std\+::ostream \&outs) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+matrix solver class 
+
+Definition at line 11 of file my\+Matrix.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmy_matrix_a96fdf649a8b75a7e0d5279768981a54d}\label{classmy_matrix_a96fdf649a8b75a7e0d5279768981a54d}} 
+\index{myMatrix@{myMatrix}!myMatrix@{myMatrix}}
+\index{myMatrix@{myMatrix}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{myMatrix()}{myMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily my\+Matrix\+::my\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor.
+
+Default Constructor. 
+
+Definition at line 10 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_ad6bc8b87e024bbe486e2a94d0638618a}\label{classmy_matrix_ad6bc8b87e024bbe486e2a94d0638618a}} 
+\index{myMatrix@{myMatrix}!myMatrix@{myMatrix}}
+\index{myMatrix@{myMatrix}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{myMatrix()}{myMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily my\+Matrix\+::my\+Matrix (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Alternate constructor 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the number of rows. \\
+\hline
+{\em y} & is the number of columns.\\
+\hline
+\end{DoxyParams}
+Alternative constructor with two arguments. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the number of rows. \\
+\hline
+{\em y} & the number of columns. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_a57f33bc4fd38dbab2dd2120438d9dabc}\label{classmy_matrix_a57f33bc4fd38dbab2dd2120438d9dabc}} 
+\index{myMatrix@{myMatrix}!````~myMatrix@{$\sim$myMatrix}}
+\index{````~myMatrix@{$\sim$myMatrix}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{$\sim$myMatrix()}{~myMatrix()}}
+{\footnotesize\ttfamily my\+Matrix\+::$\sim$my\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+Definition at line 42 of file my\+Matrix.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmy_matrix_affcce7d388d24bb4020b38a5e38ad339}\label{classmy_matrix_affcce7d388d24bb4020b38a5e38ad339}} 
+\index{myMatrix@{myMatrix}!addContent@{addContent}}
+\index{addContent@{addContent}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{addContent()}{addContent()}}
+{\footnotesize\ttfamily void my\+Matrix\+::add\+Content (\begin{DoxyParamCaption}\item[{int}]{j,  }\item[{std\+::list$<$ double $>$}]{data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & is the value for the length of the data to be added. \\
+\hline
+{\em data} & are the values to be added to the matrix.\\
+\hline
+\end{DoxyParams}
+Add data to the j column. 
+\begin{DoxyParams}{Parameters}
+{\em j} & is the the column number. \\
+\hline
+{\em data} & is the list of values to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_a03f96ac31338d054defd725a51f130c7}\label{classmy_matrix_a03f96ac31338d054defd725a51f130c7}} 
+\index{myMatrix@{myMatrix}!backSolve@{backSolve}}
+\index{backSolve@{backSolve}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{backSolve()}{backSolve()}}
+{\footnotesize\ttfamily void my\+Matrix\+::back\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Preforms the backsolve operation to create the 0 upper diagonal in the matrix.
+
+Backsolve for the C0 value. 
+
+Definition at line 180 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_abbcc56060c7e2721dac0e2d7ef9e083d}\label{classmy_matrix_abbcc56060c7e2721dac0e2d7ef9e083d}} 
+\index{myMatrix@{myMatrix}!createAugmented@{createAugmented}}
+\index{createAugmented@{createAugmented}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{createAugmented()}{createAugmented()}}
+{\footnotesize\ttfamily void my\+Matrix\+::create\+Augmented (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy_matrix}{my\+Matrix}}}]{M,  }\item[{\mbox{\hyperlink{classmy_matrix}{my\+Matrix}}}]{N }\end{DoxyParamCaption})}
+
+appends one matrix to the other.
+
+Append two matrices together. 
+\begin{DoxyParams}{Parameters}
+{\em M} & the left matrix. \\
+\hline
+{\em N} & the rigth matrix. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_a0e0488e9af50c513bc79f930a9d37f95}\label{classmy_matrix_a0e0488e9af50c513bc79f930a9d37f95}} 
+\index{myMatrix@{myMatrix}!Display@{Display}}
+\index{Display@{Display}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void my\+Matrix\+::\+Display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{outs }\end{DoxyParamCaption}) const}
+
+Display for the \mbox{\hyperlink{classmy_matrix}{my\+Matrix}} class.
+
+Display the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em \&outs} & a constant output variable for use in output stream, cout, or cerr. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 199 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_a180beafbaed7dd6994b9e8723fd30ae4}\label{classmy_matrix_a180beafbaed7dd6994b9e8723fd30ae4}} 
+\index{myMatrix@{myMatrix}!getC0@{getC0}}
+\index{getC0@{getC0}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getC0()}{getC0()}}
+{\footnotesize\ttfamily double my\+Matrix\+::get\+C0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the C0 term after all computations have been completed. 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_a1c6c0840eeff24ad522482dd651ece04}\label{classmy_matrix_a1c6c0840eeff24ad522482dd651ece04}} 
+\index{myMatrix@{myMatrix}!getC1@{getC1}}
+\index{getC1@{getC1}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getC1()}{getC1()}}
+{\footnotesize\ttfamily double my\+Matrix\+::get\+C1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the C1 term after all the computations have been completed. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_a2763b95aa7f310d3d2f7ecdb62a0455e}\label{classmy_matrix_a2763b95aa7f310d3d2f7ecdb62a0455e}} 
+\index{myMatrix@{myMatrix}!getCols@{getCols}}
+\index{getCols@{getCols}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily int my\+Matrix\+::get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the number of columns in the vector. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_af3cc21c9dc7b299b965d0cbfb634c627}\label{classmy_matrix_af3cc21c9dc7b299b965d0cbfb634c627}} 
+\index{myMatrix@{myMatrix}!getRows@{getRows}}
+\index{getRows@{getRows}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int my\+Matrix\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the number of rows in the vector. 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_a8a54b2fdf241e03d85512dfb1640295e}\label{classmy_matrix_a8a54b2fdf241e03d85512dfb1640295e}} 
+\index{myMatrix@{myMatrix}!getXk@{getXk}}
+\index{getXk@{getXk}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getXk()}{getXk()}}
+{\footnotesize\ttfamily double my\+Matrix\+::get\+Xk (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is a value for a row in the matrix. \\
+\hline
+{\em m} & is a value for a column in the matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value stored in the matrix. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_af1c68da1d0e194ef71408d89dc4b1385}\label{classmy_matrix_af1c68da1d0e194ef71408d89dc4b1385}} 
+\index{myMatrix@{myMatrix}!getYi@{getYi}}
+\index{getYi@{getYi}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{getYi()}{getYi()}}
+{\footnotesize\ttfamily double my\+Matrix\+::get\+Yi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+1. 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_ab6be1d3036e4b08f94c2e96b2be2ec9f}\label{classmy_matrix_ab6be1d3036e4b08f94c2e96b2be2ec9f}} 
+\index{myMatrix@{myMatrix}!multiply@{multiply}}
+\index{multiply@{multiply}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily void my\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy_matrix}{my\+Matrix}}}]{M,  }\item[{\mbox{\hyperlink{classmy_matrix}{my\+Matrix}}}]{N }\end{DoxyParamCaption})}
+
+Performs matrix multiplication between two matrices (order matters.) 
+\begin{DoxyParams}{Parameters}
+{\em M} & is the first matrix. \\
+\hline
+{\em N} & is the matrix M will be multiplied with.\\
+\hline
+\end{DoxyParams}
+Dot product of two matrices (order matters.) 
+\begin{DoxyParams}{Parameters}
+{\em M} & the first matrix. \\
+\hline
+{\em N} & the matirx to be multiplied with M. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_ab8c3f15494e022e17dd5040dae3285a2}\label{classmy_matrix_ab8c3f15494e022e17dd5040dae3285a2}} 
+\index{myMatrix@{myMatrix}!reduce@{reduce}}
+\index{reduce@{reduce}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily void my\+Matrix\+::reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performs the reduce operation to create the 0 lower diagonal in the matrix.
+
+Reduce the row so the first number is 0. 
+
+Definition at line 161 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_ac25fdce4ac1f04bcaa037055ae215971}\label{classmy_matrix_ac25fdce4ac1f04bcaa037055ae215971}} 
+\index{myMatrix@{myMatrix}!scale@{scale}}
+\index{scale@{scale}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily void my\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Scales the row so the first value is 1. 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the row to be scaled.\\
+\hline
+\end{DoxyParams}
+Scale the first row so the first number is 1. 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the row to be scaled. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 142 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_a242fae1501bc51c00ee483555d2ee68c}\label{classmy_matrix_a242fae1501bc51c00ee483555d2ee68c}} 
+\index{myMatrix@{myMatrix}!setCols@{setCols}}
+\index{setCols@{setCols}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{setCols()}{setCols()}}
+{\footnotesize\ttfamily void my\+Matrix\+::set\+Cols (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & values to set the number of columns. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_a24df950f2d3a95eae4ab9a2d3e471d4a}\label{classmy_matrix_a24df950f2d3a95eae4ab9a2d3e471d4a}} 
+\index{myMatrix@{myMatrix}!setRows@{setRows}}
+\index{setRows@{setRows}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{setRows()}{setRows()}}
+{\footnotesize\ttfamily void my\+Matrix\+::set\+Rows (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value to set the number of rows. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file my\+Matrix.\+h.
+
+\mbox{\Hypertarget{classmy_matrix_a1f55cee5d371210fc5981d7bfa8dcedb}\label{classmy_matrix_a1f55cee5d371210fc5981d7bfa8dcedb}} 
+\index{myMatrix@{myMatrix}!sortRow@{sortRow}}
+\index{sortRow@{sortRow}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{sortRow()}{sortRow()}}
+{\footnotesize\ttfamily void my\+Matrix\+::sort\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reorders a matrix from least to greatest.
+
+Sort rows from least to greatest in the first column. 
+
+Definition at line 122 of file my\+Matrix.\+cpp.
+
+\mbox{\Hypertarget{classmy_matrix_aa3649ce7d531e6683733b4c1c0c4cf00}\label{classmy_matrix_aa3649ce7d531e6683733b4c1c0c4cf00}} 
+\index{myMatrix@{myMatrix}!transform@{transform}}
+\index{transform@{transform}!myMatrix@{myMatrix}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void my\+Matrix\+::transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy_matrix}{my\+Matrix}}}]{M }\end{DoxyParamCaption})}
+
+Performs the transform operation on the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em M} & is the switching of values from rows to columns in the matrix.\\
+\hline
+\end{DoxyParams}
+Perform a matrix transform. 
+\begin{DoxyParams}{Parameters}
+{\em M} & is the original matrix. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file my\+Matrix.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cs417/\+C\+S417\+Semester\+Project/src/main/headers/my\+Matrix.\+h\item 
+D\+:/cs417/\+C\+S417\+Semester\+Project/src/main/cpp/my\+Matrix.\+cpp\end{DoxyCompactItemize}
